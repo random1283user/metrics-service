@@ -4,10 +4,11 @@ oracle:
   password: "YOUR_ORACLE_PASSWORD"
 
 influx:
-  url: "http://127.0.0.1:8086"
-  org: "local"  
-  bucket: "metrics"
-  token: "dummy-token"
+  host: "127.0.0.1"
+  port: 8086
+  org: "local"
+  database: "metrics"
+  token: ""
 
 scheduler:
   weekdays: [0, 1, 2, 3, 4]
@@ -15,7 +16,7 @@ scheduler:
   end_hour: 22
   query_timeout_ms: 10000
 
-#ID Пользователей (Ю-шки)
+# Ю-шки пользователей
 user_mapping:
   "1001": "Alice Example"
   "1002": "Bob Example"
